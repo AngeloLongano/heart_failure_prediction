@@ -52,5 +52,14 @@ Duplicati: 272 osservazioni
 
 Set di dati finale: __918 osservazioni__
 
+# Studio del dataset
+All'interno del notebook [analysis](analysis.ipynb) è presente lo studio del dataset con le seguenti parti:
+- Analisi esplorativa dei dati
+- Studio dei dati mancanti
+- Studio di centralità e dispersione
+- Studio delle correlazione tra le variabili
+- Studio degli outlier
+- Normalizzazione dei dati e classificazione binaria con un algoritmo di Machine Learning (Random Forest)
+
 # Citation
 fedesoriano. (September 2021). Heart Failure Prediction Dataset. Retrieved [Date Retrieved] from https://www.kaggle.com/fedesoriano/heart-failure-prediction.
