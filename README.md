@@ -61,5 +61,8 @@ All'interno del notebook [analysis](analysis.ipynb) è presente lo studio del da
 - Studio degli outlier
 - Normalizzazione dei dati e classificazione binaria con un algoritmo di Machine Learning (Random Forest)
 
+# Studio serie temporale
+All'interno del notebook [analysis_time_series](analysis_time_series.ipynb) è presente lo studio di una semplice serie storica, dove vengono messi a confronto la previsione con un modello regressivo standard e un modello autoregressivo.
+
 # Citation
 fedesoriano. (September 2021). Heart Failure Prediction Dataset. Retrieved [Date Retrieved] from https://www.kaggle.com/fedesoriano/heart-failure-prediction.
