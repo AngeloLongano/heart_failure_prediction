@@ -65,4 +65,5 @@ All'interno del notebook [analysis](analysis.ipynb) è presente lo studio del da
 All'interno del notebook [analysis_time_series](analysis_time_series.ipynb) è presente lo studio di una semplice serie storica, dove vengono messi a confronto la previsione con un modello regressivo standard e un modello autoregressivo.
 
 # Citation
-fedesoriano. (September 2021). Heart Failure Prediction Dataset. Retrieved [Date Retrieved] from https://www.kaggle.com/fedesoriano/heart-failure-prediction.
+fedesoriano. (September 2021). Heart Failure Prediction Dataset. Retrieved [Date Retrieved] from https://www.kaggle.com/fedesoriano/heart-failure-prediction.  
+Questo progetto è cariacto anche su [github](https://github.com/AngeloLongano/heart_failure_prediction.git)
