@@ -1,69 +1,83 @@
 # Heart Failure Prediction
 
-Le malattie cardiovascolari (CVD) sono la prima causa di morte a livello globale, con circa 17,9 milioni di vite all'anno, pari al 31% di tutti i decessi nel mondo. Quattro decessi su 5 per CVD sono dovuti ad attacchi di cuore e ictus, e un terzo di questi decessi avviene prematuramente in persone di età inferiore ai 70 anni. L'insufficienza cardiaca è un evento comune causato da CVD e questo set di dati contiene 11 caratteristiche che possono essere utilizzate per prevedere una possibile malattia cardiaca.
+Cardiovascular diseases (CVD) are the leading cause of death worldwide, accounting for about 17.9 million deaths per year (approximately 31% of all global deaths). Four out of five CVD deaths are due to heart attacks and strokes, and one third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common outcome of CVD and this dataset contains 11 features that can be used to predict possible heart disease.
 
-Le persone affette da malattie cardiovascolari o ad alto rischio cardiovascolare (per la presenza di uno o più fattori di rischio come ipertensione, diabete, iperlipidemia o malattie già conclamate) hanno bisogno di una ßdiagnosi e di una gestione precoci, per le quali un modello di apprendimento automatico può essere di grande aiuto.
+People with cardiovascular disease or at high cardiovascular risk (due to one or more risk factors such as hypertension, diabetes, hyperlipidemia, or established disease) need early diagnosis and management — where a machine learning model can be very helpful.
 
-## Attributi del dataset
+## Dataset attributes
 
-- Age: età del paziente [anni]
-- Sex: sesso del paziente 
-    - M: Maschio
-    - F: Femmina
-- ChestPainType: tipo di dolore toracico 
-    - TA: Angina* Tipica
-    - ATA: Angina Atipica
-    - NAP: Dolore Non Anginoso
-    - ASY: Asintomatico
-- RestingBP: pressione sanguigna a riposo [mm Hg]
-- Cholesterol: colesterolo sierico [mg/dl]
-- FastingBS: glicemia a digiuno 
-    - 1: se FastingBS > 120 mg/dl
-    - 0: altrimenti
-- RestingECG: risultati dell'elettrocardiogramma a riposo 
-    - Normal: Normale
-    - ST: presenza di anomalia dell'onda ST-T (inversioni dell'onda T e/o elevazione o depressione del segmento ST di > 0,05 mV)
-    - LVH: mostra probabile o definita ipertrofia ventricolare sinistra secondo i criteri di Estes
-- MaxHR: frequenza cardiaca massima raggiunta [valore numerico tra 60 e 202]
-- ExerciseAngina: angina* indotta da esercizio 
-    - Y: Sì
-    - N: No
-- Oldpeak: oldpeak = ST [valore numerico misurato in depressione]
-- ST_Slope: inclinazione del segmento ST durante l'esercizio 
-    - Up: inclinato verso l'alto
-    - Flat: piatto
-    - Down: inclinato verso il basso
-- HeartDisease: classe di uscita 
-    - 1: malattia cardiaca
-    - 0: Normale
+# Heart Failure Prediction
 
-_*Il termine Angina Pectoris deriva dai termini latini Angina=dolore e Pectoris=petto. Si tratta, in effetti, di una sindrome caratterizzata da dolore in regione retrosternale, talvolta irradiato al lato ulnare del braccio sinistro e alle spalle. [wiki](https://www.my-personaltrainer.it/cardiopatia-ischemica/angina.html)_
+Cardiovascular diseases (CVD) are the leading cause of death worldwide, accounting for about 17.9 million deaths per year (approximately 31% of all global deaths). Four out of five CVD deaths are due to heart attacks and strokes, and one third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common outcome of CVD and this dataset contains 11 features that can be used to predict possible heart disease.
 
-## Sorgente del dataset
-Questo set di dati è stato creato combinando diversi set di dati già disponibili in modo indipendente ma non combinati prima. In questo set di dati, 5 set di dati sul cuore sono combinati su 11 caratteristiche comuni, il che lo rende il più grande set di dati sulle malattie cardiache finora disponibile per scopi di ricerca. I cinque set di dati utilizzati per la sua cura sono:
+People with cardiovascular disease or at high cardiovascular risk (due to one or more risk factors such as hypertension, diabetes, hyperlipidemia, or established disease) need early diagnosis and management — where a machine learning model can be very helpful.
 
-Cleveland: 303 osservazioni
-Ungheria: 294 osservazioni
-Svizzera: 123 osservazioni
-Long Beach VA: 200 osservazioni
-Set di dati Stalog (Heart): 270 osservazioni
-Totale: 1190 osservazioni
-Duplicati: 272 osservazioni
+## Dataset attributes
 
-Set di dati finale: __918 osservazioni__
+- Age: patient age [years]
+- Sex: patient sex
+  - M: Male
+  - F: Female
+- ChestPainType: chest pain type
+  - TA: Typical Angina
+  - ATA: Atypical Angina
+  - NAP: Non-Anginal Pain
+  - ASY: Asymptomatic
+- RestingBP: resting blood pressure [mm Hg]
+- Cholesterol: serum cholesterol [mg/dl]
+- FastingBS: fasting blood sugar
+  - 1: if FastingBS > 120 mg/dl
+  - 0: otherwise
+- RestingECG: resting electrocardiogram results
+  - Normal: Normal
+  - ST: ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+  - LVH: probable or definite left ventricular hypertrophy according to Estes' criteria
+- MaxHR: maximum heart rate achieved [numeric value between 60 and 202]
+- ExerciseAngina: exercise-induced angina
+  - Y: Yes
+  - N: No
+- Oldpeak: ST depression induced by exercise relative to rest [numeric value]
+- ST_Slope: slope of the peak exercise ST segment
+  - Up: upsloping
+  - Flat: flat
+  - Down: downsloping
+- HeartDisease: output class
+  - 1: heart disease
+  - 0: Normal
 
-# Studio del dataset
-All'interno del notebook [analysis](analysis.ipynb) è presente lo studio del dataset con le seguenti parti:
-- Analisi esplorativa dei dati
-- Studio dei dati mancanti
-- Studio di centralità e dispersione
-- Studio delle correlazione tra le variabili
-- Studio degli outlier
-- Normalizzazione dei dati e classificazione binaria con un algoritmo di Machine Learning (Random Forest)
+*The term Angina Pectoris comes from the Latin terms Angina = pain and Pectoris = chest. It is a syndrome characterized by retrosternal pain, sometimes radiating to the ulnar side of the left arm and shoulders. [wiki reference](https://www.my-personaltrainer.it/cardiopatia-ischemica/angina.html)*
 
-# Studio serie temporale
-All'interno del notebook [analysis_time_series](analysis_time_series.ipynb) è presente lo studio di una semplice serie storica, dove vengono messi a confronto la previsione con un modello regressivo standard e un modello autoregressivo.
+## Dataset source
 
-# Citation
-fedesoriano. (September 2021). Heart Failure Prediction Dataset. Retrieved [Date Retrieved] from https://www.kaggle.com/fedesoriano/heart-failure-prediction.  
-Questo progetto è cariacto anche su [github](https://github.com/AngeloLongano/heart_failure_prediction.git)
+This dataset was created by combining several previously available heart datasets that had not been combined before. In this combined dataset, 5 heart datasets were merged on 11 common features, making it the largest heart disease dataset available for research purposes. The five datasets used are:
+
+- Cleveland: 303 observations
+- Hungary: 294 observations
+- Switzerland: 123 observations
+- Long Beach VA: 200 observations
+- Stalog (Heart) dataset: 270 observations
+
+- Total (before duplicates removed): 1190 observations
+- Duplicates removed: 272 observations
+
+Final dataset: **918 observations**
+
+## Dataset analysis
+
+The notebook [analysis](analysis.ipynb) contains the dataset study and includes:
+
+- Exploratory data analysis
+- Missing data analysis
+- Measures of central tendency and dispersion
+- Correlation analysis between variables
+- Outlier analysis
+- Data normalization and binary classification using a Machine Learning algorithm (Random Forest)
+
+## Time series analysis
+
+The notebook [analysis_time_series](analysis_time_series.ipynb) contains a simple time series study comparing predictions from a standard regression model and an autoregressive model.
+
+## Citation
+
+fedesoriano. (September 2021). Heart Failure Prediction Dataset. Retrieved [Date Retrieved] from <https://www.kaggle.com/fedesoriano/heart-failure-prediction>.
+This project is also available on [GitHub](https://github.com/AngeloLongano/heart_failure_prediction.git)
